@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">  <!--UTF-8國際編譯碼，不要用別的-->
+        <meta name="keywords" content="html, css, 網頁, JS, javascript">
+        <meta name="description" content="Here is Jenny's website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="SLab">
+        <title>S. Lab</title>
+        <!--bootstrap-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!--自訂義<CSS-->
+        <link rel="stylesheet" href="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/css">
+        
+        <!--icon-->
+        <script src="https://kit.fontawesome.com/49c6547260.js" crossorigin="anonymous"></script>
+        
+        <style>
+        /* 3. 修正 Intro 區塊：增加高度並修復漸層語法 */
+        #intro {
+            background: linear-gradient(45deg, rgba(128, 127, 67, 0.9), transparent 80%), 
+                        url('img/bg-masthead.jpg') no-repeat center;
+            background-size: cover;
+            min-height: 60vh; /* 給予最小高度 */
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        /* 讓第二區塊圖片不要爆出去 */
+        .self img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        </style>
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        </head>
+    <body>
+         <!--預留空間-->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <!--a是超連結-->
+                <a class="navbar-brand" href="index"><img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/logo.jpg" alt="logo" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">主頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.google.com.tw">最新消息</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        簡介
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">聯絡我們</a>
+                        </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+            </div>
+    </header>
+    <section id="intro" style="background: linear-gradient(45deg, rgb(128 127 67 / 90%), transparent) 20%, url('/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/outdoor-2.jpg') no-repeat center;background-size: cover;">  
+        <div class="container">
+            <div class="col-12 col-md-6">
+                <h1 class="display-4 text-light fw-medium">Outdoor GreenTech</h1>
+                <p class="lead text-light mt-3">Keep Exploring Stay Safe</p>
+                <a href="#" class="btn btn-primary btn-xl">More</a>
+            </div>  
+        </div>
+    </section>
+    <section id="second">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="text-center">SLab介紹</h3>
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5 self">
+                            <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/outdoor-1.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/logo.jpg" class="d-block mb-4" alt="logo" width="180">
+                            <p class="lead mb-5">追求科技與自然的完美結合</p>
+                            <ul>
+                                <li class="mb-3">專業戶外裝備研發</li>
+                                <li class="my-3">綠能科技導入</li>
+                                <li class="my-3">極致輕量化設計</li>
+                                <li class="my-3">永續循環材料工法</li>
+                                <li class="my-3">全天候智能安全監測</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="space">
+    <div style="height: 50px;"></div>
+    </section>
+
+
+<!--promotion-->
+    <section id="lastest">
+        <div class="container">
+            <div class="row text-center">
+                <h3>推薦方案</h3>
+                <div class="col-md-4 text-center">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/bicycle.jpeg" alt="" class="w-50">
+                                <div class="innertext">
+                                    <span class="text-dark">限時優惠中</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="lower">
+                            <h3>電動車・自由自在</h3>
+                            <p><i class="fa-solid fa-bicycle"></i>享受無限自由的騎乘體驗</p>
+                            <p><i class="fa-solid fa-clock"></i>2026/1/1-2026/2/28</p>
+                            <button class="btn btn-primary">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-md-4 text-center">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/bicycle-2.jpeg" alt="" class="w-75">
+                                <div class="innertext">
+                                    <span class="text-dark">限時優惠中</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="lower">
+                            <h3>自行車</h3>
+                            <p><i class="fa-solid fa-bicycle"></i>享受無限自由的騎乘體驗</p>
+                            <p><i class="fa-solid fa-clock"></i>2026/1/1-2026/2/28</p>
+                            <button class="btn btn-primary">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 text-center">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/bicycle-family.jpeg" alt="" class="w-50">
+                                <div class="innertext">
+                                    <span class="text-dark">限時優惠中</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="lower">
+                            <h3>親子車</h3>
+                            <p><i class="fa-solid fa-bicycle"></i>享受無限自由的騎乘體驗</p>
+                            <p><i class="fa-solid fa-clock"></i>2026/1/1-2026/2/28</p>
+                            <button class="btn btn-primary">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="space">
+    <div style="height: 50px;"></div>
+</section>
+
+
+<!--EMAIL-->
+<section id="email">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h3>訂閱電子報</h3>
+                <p>最新消息和獨家優惠</p>
+                <div class="imput-group justify-content-center d-flex">
+                    <input type="email" class="form-control w-50 d-inline-block me-2" placeholder="輸入您的電子郵件地址" required>
+                    <button type="submit" class="btn btn-primary">訂閱</button>
+                </div>
+
+                <!--用Form需要將資料回傳至DB或其他地方-->
+                <!--<form class="d-flex justify-content-center">
+                    <input type="email" class="form-control w-50 me-2" placeholder="輸入您的電子郵件地址" required>
+                    <button type="submit" class="btn btn-primary">訂閱</button>
+                </form>-->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="space">
+    <div style="height: 50px;"></div>
+</section>
+
+
+<!--頁尾-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/Users/jennywenmacpro/Documents/聯成.net code-202512-202605/1230webpage/img/logo.jpg" alt="" width="100">
+                    <p>Keep Exploring Stay SAFE!</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>網站地圖</h4>
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">最新消息</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">作品集</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>聯絡我們</h4>
+                    <p>高雄市左營區香榭大道100號</p>
+                    <p>電話: (07)1234-5678</p>
+                    <p>Email:<a href="mailto:pauline1691@gmail.com">pauline1691@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        
+    </script>
+        
+    </body>
+    </html>
